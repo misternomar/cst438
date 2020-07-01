@@ -24,7 +24,6 @@ public class Movie {
 	@Size(min=1, max=50)
 	private String name;
 	
-	@NotNull
 	private String time;
 	
 	public Movie() {

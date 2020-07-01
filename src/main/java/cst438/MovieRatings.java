@@ -39,8 +39,9 @@ public class MovieRatings {
 	
 	@GetMapping("/movies")
 	public String showMovies(Model model) {
-		Iterable<Movie> raitings = movieRepository.findAllMovieRatingsOrderByTitleDateDesc();
-		model.addAttribute("ratings", raitings);
+		Iterable<Movie> ratings = movieRepository.findAllMovieRatingsOrderByTitleDateDesc();
+		model.addAttribute("ratings", ratings);
+		//System.out.println()
 		return "show_movies";
 	}
 }

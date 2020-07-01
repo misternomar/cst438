@@ -28,14 +28,6 @@ public class Movie {
 	
 	public Movie() {
 	}
-	
-	/**public Movie(String title, int rating, String name, String time) {
-		super();
-		this.title = title;
-		this.rating = rating;
-		this.name = name;
-		this.time = time;
-	}**/
 
 	public String getTitle() {
 		return title;

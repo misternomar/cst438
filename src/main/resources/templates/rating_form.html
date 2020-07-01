@@ -7,13 +7,16 @@
 <body>
 	<h2>Enter a movie, rating and your name</h2>
 	<form action="#" th:action="@{/movies/new}" th:object="${movie}" method="post">
-	Movie title: <input type="text" th:field="*{title}" />
+		Movie title: <input type="text" th:field="*{title}" />
 		<span th:if="${#fields.hasErrors('title')}" th:errors="*{title}"> </span><br />
-	Rating: <input type="number" th:field="*{rating}" min="1" max="5" />
+		
+		Rating: <input type="number" th:field="*{rating}" min="1" max="5" />
 		<span th:if="${#fields.hasErrors('rating')}" th:errors="*{rating}"> </span><br />
-	Name: <input type="text" th:field="*{name}" />
+		
+		Name: <input type="text" th:field="*{name}" />
 		<span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"> </span><br />	
-	<input type="submit" value="Submit" />
+		
+		<input type="submit" value="Submit" />
 	</form>
 </body>
 </html>
